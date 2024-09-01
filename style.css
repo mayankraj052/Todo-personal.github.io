@@ -34,35 +34,43 @@ h1 {
 #todos div {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 15px; /* Increased padding */
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
+  font-size: 18px; /* Larger text size */
 }
 
-#todos div h4 {
-  margin: 0;
+#todos div span {
+  flex: 1; /* Allow text to take full width */
+}
+
+#todos div input[type="checkbox"] {
+  margin-right: 15px; /* Space between checkbox and text */
+  transform: scale(1.5); /* Increase the size of the checkbox */
 }
 
 #todos div button {
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px; /* Larger button size */
   border-radius: 5px;
   cursor: pointer;
 }
 
 #todoInput {
   width: 80%;
-  padding: 10px;
+  padding: 15px; /* Increased padding */
+  font-size: 18px; /* Larger text size */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 15px 25px; /* Larger button size */
   margin-left: 10px;
   background-color: blue;
   color: white;
@@ -70,15 +78,16 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  font-size: 18px; /* Larger text size */
 }
 
 /* Styles for the empty state message */
 .empty-state {
   text-align: center;
   color: gray;
+  font-size: 18px; /* Larger text size */
 }
 
-/* New styles for buttons to improve layout */
 button:hover {
   opacity: 0.8; /* Change opacity on hover for effect */
 }
