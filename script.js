@@ -52,10 +52,10 @@ function deleteTodo(id) {
 
 // Function to delete all todos
 function deleteAllTodos() {
-    if(todos.length === 0) {
-        alert("Nothing to delete. the List is already empty.");
-        return;
-    }
+  if (todos.length === 0) {
+    alert("Nothing to delete. the List is already empty.");
+    return;
+  }
   if (confirm("Are you sure you want to delete all todos?")) {
     todos = []; // Clear the todos array
     localStorage.removeItem("todos"); // Remove from local storage
@@ -72,3 +72,4 @@ function generateUniqueId() {
 window.onload = function () {
   renderTodos();
 };
+//done
