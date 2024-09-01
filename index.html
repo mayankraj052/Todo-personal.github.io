@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div id="todos">
+      <p class="empty-state">No todos yet!</p>
+    </div>
+    <div>
+      <input type="text" id="todoInput" placeholder="Add a new todo">
+      <button onclick="addTodo()">Add Todo</button>
+      <!-- <button onclick="addAllTodos()">Add All Todos</button> -->
+      <button onclick="deleteAllTodos()">Delete All Todos</button> <!-- New button -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

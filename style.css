@@ -1,0 +1,97 @@
+body {
+  background-color: greenyellow;
+  color: red;
+  margin: 50px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(189, 244, 6, 0.1);
+}
+
+#todos {
+  margin-top: 20px;
+  width: 100%; /* Ensures todos take the full width */
+}
+
+#todos div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+#todos div h4 {
+  margin: 0;
+}
+
+#todos div button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#todoInput {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styles for the empty state message */
+.empty-state {
+  text-align: center;
+  color: gray;
+}
+
+/* New styles for buttons to improve layout */
+button:hover {
+  opacity: 0.8; /* Change opacity on hover for effect */
+}
+
+#todos div button:hover {
+  background-color: darkred; /* Darker red on hover for delete buttons */
+}
+
+/* Additional styling for the Delete All button */
+button:nth-of-type(3) {
+  background-color: darkorange; /* Different color for Delete All */
+}
+
+button:nth-of-type(3):hover {
+  background-color: orange; /* Lighter on hover */
+}
